@@ -1,0 +1,145 @@
+{
+   "Builder": {
+      "Name": "my_builder",
+      "Builds": [
+         {
+            "Name": "my_build_1",
+            "Directory": "/tmp/tmp1",
+            "Priority": 5,
+            "State": "state_ready",
+            "Stages": [
+               {
+                  "Name": "my_stage_1",
+                  "Priority": 5,
+                  "State": "state_ready",
+                  "Commands": [
+                     {
+                        "Name": "my_command_1",
+                        "Command": "success.sh",
+                        "Args": "arg_111",
+                        "Directory": "/tmp"
+                     },
+                     {
+                        "Name": "my_command_2",
+                        "Command": "success.sh",
+                        "Args": "arg_112",
+                        "Directory": "/tmp"
+                     }
+                  ]
+               },
+               {
+                  "Name": "my_stage_2",
+                  "Priority": 5,
+                  "State": "state_ready",
+                  "Commands": [
+                     {
+                        "Name": "my_command_1",
+                        "Command": "success.sh",
+                        "Args": "arg_121",
+                        "Directory": "/tmp"
+                     },
+                     {
+                        "Name": "my_command_2",
+                        "Command": "success.sh",
+                        "Args": "arg_122",
+                        "Directory": "/tmp"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Name": "my_build_2",
+            "Directory": "/tmp/tmp2",
+            "Priority": 5,
+            "State": "state_ready",
+            "Stages": [
+               {
+                  "Name": "my_stage_1",
+                  "Priority": 5,
+                  "State": "state_ready",
+                  "Commands": [
+                     {
+                        "Name": "my_command_1",
+                        "Command": "success.sh",
+                        "Args": "arg_211",
+                        "Directory": "/tmp"
+                     },
+                     {
+                        "Name": "my_command_2",
+                        "Command": "fail.sh",
+                        "Args": "arg_212",
+                        "Directory": "/tmp"
+                     }
+                  ]
+               },
+               {
+                  "Name": "my_stage_2",
+                  "Priority": 5,
+                  "State": "state_ready",
+                  "Commands": [
+                     {
+                        "Name": "my_command_1",
+                        "Command": "success.sh",
+                        "Args": "arg_221",
+                        "Directory": "/tmp"
+                     },
+                     {
+                        "Name": "my_command_2",
+                        "Command": "success.sh",
+                        "Args": "arg_222",
+                        "Directory": "/tmp"
+                     }
+                  ]
+               }
+            ]
+         },
+         {
+            "Name": "my_build_3",
+            "Directory": "/tmp/tmp3",
+            "Priority": 5,
+            "State": "state_ready",
+            "Stages": [
+               {
+                  "Name": "my_stage_1",
+                  "Priority": 5,
+                  "State": "state_ready",
+                  "Commands": [
+                     {
+                        "Name": "my_command_1",
+                        "Command": "success.sh",
+                        "Args": "arg_311",
+                        "Directory": "/tmp"
+                     },
+                     {
+                        "Name": "my_command_2",
+                        "Command": "fail.sh",
+                        "Args": "arg_312",
+                        "Directory": "/tmp"
+                     }
+                  ]
+               },
+               {
+                  "Name": "my_stage_2",
+                  "Priority": 5,
+                  "State": "state_ready",
+                  "Commands": [
+                     {
+                        "Name": "my_command_1",
+                        "Command": "success.sh",
+                        "Args": "arg_321",
+                        "Directory": "/tmp"
+                     },
+                     {
+                        "Name": "my_command_2",
+                        "Command": "success.sh",
+                        "Args": "arg_322",
+                        "Directory": "/tmp"
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+}
